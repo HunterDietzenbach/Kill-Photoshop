@@ -9,29 +9,78 @@
 public class PictureTester
 {
   /** Method to test zeroBlue */
- /* public static void testZeroBlue()
+ public static void testZeroBlue()
   {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
   }
-  */
-  public static void testOnlyBlue()
+ 
+public static void testOnlyBlue()
   {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
-    //beach.zeroBlue();
     beach.onlyBlue();
     beach.explore();
   }
+ 
+	
+  public static void testnegate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+  
+  public static void testGreyScale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.GrayScale();
+    beach.explore();
+  }
+  
+  public static void testfixUnderwater()
+  {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.fixUnderwater();
+    beach.explore();
+  }
+  
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
+    Picture caterpillar = new Picture("arch.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorriztonal()
+  {
+    Picture caterpillar = new Picture("arch.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorrizontal();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorriztonalBotTop()
+  {
+    Picture caterpillar = new Picture("koala.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorrizontalBotTop();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrormirrordiagnoal()
+  {
+    Picture caterpillar = new Picture("koala.jpg");
+    caterpillar.explore();
+    caterpillar.mirrordiagnol();
     caterpillar.explore();
   }
   
@@ -67,14 +116,23 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-   // testZeroBlue();
-    testOnlyBlue();
+    // testZeroBlue();
     //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    //testNegate();
-    //testGrayscale();
-    //testFixUnderwater();
-    //testMirrorVertical();
+	//testKeepOnlyGreen();
+	  
+/////////******************************* A5 3-6 *****************************************************/////////  
+   // testOnlyBlue();
+   // testnegate();
+   // testGreyScale();
+   // testfixUnderwater();
+/////////*******************************************************************************************/////////  
+   
+/////////******************************* A6 1-4 *****************************************************/////////  
+   // testMirrorVertical();
+   // testMirrorHorriztonal();
+   //  testMirrorHorriztonalBotTop();	 
+     testMirrormirrordiagnoal();
+/////////*******************************************************************************************/////////  
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
